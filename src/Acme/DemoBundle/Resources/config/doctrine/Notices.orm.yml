@@ -1,0 +1,28 @@
+Acme\DemoBundle\Entity\Notices:
+    type: entity
+    table: notices
+    id:
+        id:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+            id: true
+        terminalId:
+            type: bigint
+            nullable: false
+            unsigned: true
+            comment: ''
+            id: true
+            column: terminal_id
+    fields:
+        time:
+            type: datetime
+            nullable: false
+            comment: ''
+        type:
+            type: boolean
+            nullable: false
+            comment: ''
+    lifecycleCallbacks: {  }

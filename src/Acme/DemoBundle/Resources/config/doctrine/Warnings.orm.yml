@@ -1,0 +1,27 @@
+Acme\DemoBundle\Entity\Warnings:
+    type: entity
+    table: warnings
+    id:
+        id:
+            type: bigint
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+        terminalId:
+            type: bigint
+            nullable: false
+            unsigned: true
+            comment: ''
+            id: true
+            column: terminal_id
+    fields:
+        time:
+            type: datetime
+            nullable: false
+            comment: ''
+        type:
+            type: boolean
+            nullable: false
+            comment: ''
+    lifecycleCallbacks: {  }

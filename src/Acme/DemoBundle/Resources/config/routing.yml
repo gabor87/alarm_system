@@ -1,0 +1,11 @@
+_welcome:
+    pattern:  /
+    defaults: { _controller: AcmeDemoBundle:Welcome:index }
+
+_archive:
+    pattern:  /events/{terminalid}/archive
+    defaults: { _controller: AcmeDemoBundle:Events:archive }
+
+_archive_mobile:
+    pattern:  /events/{terminalid}
+    defaults: { _controller: AcmeDemoBundle:Events:archivemobile }
